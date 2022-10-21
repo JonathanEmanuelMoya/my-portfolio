@@ -1,3 +1,23 @@
+let visibleMenu = false;
+
+function showHiddenMenu(){
+    if(visibleMenu){
+        document.getElementById("nav").classList = "";
+        visibleMenu = false;
+    } else {
+        document.getElementById("nav").classList = "responsive";
+        visibleMenu = true;
+    }
+}
+
+
+function select(){
+    document.getElementById("nav").classList = "";
+    visibleMenu = false;
+}
+
+
+
 function skillsEffect(){
     let skills = document.getElementById("skills");
     let distance_skills = window.innerHeight - skills.getBoundingClientRect().top;
