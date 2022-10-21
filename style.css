@@ -677,8 +677,11 @@ footer p{
 @media screen and (max-width:700px) {
 .contact .row{
         display: block;
+        justify-content: center;
     }
     .contact .row .col{
         width: 100%;
+        margin-right: 50%;
+        justify-content: center;
     }
 }
