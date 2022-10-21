@@ -18,12 +18,6 @@ function skillsEffect(){
 }
 
 
-
-
-
-
-
-
 window.onscroll = function () {
     skillsEffect();
 }
