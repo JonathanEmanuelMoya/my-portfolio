@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jonathan Moya Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#home">Jona</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#home" onclick="select()">HOME</a></li>
+                    <li><a href="#about" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#proyects" onclick="select()">PROYECTS</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="showHiddenMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="home" class="home">
+        <div class="content-banner">
+            <div class="container-img">
+                <img src="img/foto jon.png" alt="personal-photo">
+            </div>
+            <h1>Jonathan Moya</h1>
+            <h2>Frontend Developer</h2>
+            <div class="networks">
+                <a href="https://www.facebook.com/jonathan.moya93" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-emanuel-moya/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/JonathanEmanuelMoya" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="content-section">
+            <h2>About me</h2>
+            <p><span>Hi! I am Jonathan Emanuel Moya, </span>and I'm a Frontend Developer living in Buenos Aires.</p>
+            <p>I have a diverse set of skills, ranging from design, to HTML + CSS + JavaScript + React and going for
+                Node.js and Java.</p>
+
+            <div class="row">
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="container-interests">
+                        <div class="interests">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Games</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Music</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Travel</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Read</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-drum"></i>
+                            <span>Drums</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button><a href="img/Moya Jonathan Emanuel.pdf" download="Jonathan-moya-cv">Download CV</a><i
+                    class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills">
+        <div class="content-section">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Node Js</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunication</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Good Practices</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyects" class="proyects">
+        <div class="content-section">
+            <h2>Proyects</h2>
+            <div class="gallery">
+                <div class="proyect">
+                    <img src="img/slipknot.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Slipknot Website</h3>
+                        <p>Band</p>
+                        <a href="https://jonathanemanuelmoya.github.io/webslipknot/" target="_blank">
+                            <h5>Demonstration</h5>
+                        </a>
+                        <a href="https://github.com/JonathanEmanuelMoya/webslipknot" target="_blank">
+                            <h5>Code</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <img src="img/Simulator.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Fixed Term Simulator</h3>
+                        <p>Simulator</p>
+                        <a href="https://jonathanemanuelmoya.github.io/Simulador-Plazo-Fijo/" target="_blank">
+                            <h5>Demonstration</h5>
+                        </a>
+                        <a href="https://github.com/JonathanEmanuelMoya/Simulador-Plazo-Fijo" target="_blank">
+                            <h5>Code</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <img src="img/Mercadolibre.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mercadolibre Product</h3>
+                        <p>Mercadolibre</p>
+                        <a href="https://jonathanemanuelmoya.github.io/clon-mercadolibre-reactjs/" target="_blank">
+                            <h5>Demonstration</h5>
+                        </a>
+                        <a href="https://github.com/JonathanEmanuelMoya/clon-mercadolibre-reactjs" target="_blank">
+                            <h5>Code</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <img src="img/Challenge.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Challenge Stealth</h3>
+                        <p>Challenge website</p>
+                        <a href="https://jonathanemanuelmoya.github.io/Challenge-Stealth/" target="_blank">
+                            <h5>Demonstration</h5>
+                        </a>
+                        <a href="https://github.com/JonathanEmanuelMoya/Challenge-Stealth" target="_blank">
+                            <h5>Code</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <img src="img/Codoacodo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Codo a Codo Page</h3>
+                        <p>Practical Exercise</p>
+                        <a href="https://jonathanemanuelmoya.github.io/ActividadPractica/" target="_blank">
+                            <h5>Demonstration</h5>
+                        </a>
+                        <a href="https://github.com/JonathanEmanuelMoya/ActividadPractica" target="_blank">
+                            <h5>Code</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Photography</p>
+                        <a href="https://jonathanemanuelmoya.github.io/webslipknot/" target="_blank">
+                            <h5>Demonstration</h5>
+                        </a>
+                        <a href="https://github.com/JonathanEmanuelMoya/webslipknot" target="_blank">
+                            <h5>Code</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="content-section">
+            <h2>Contact</h2>
+            <div class="row">
+                <div class="col">
+                    <form action="https://formsubmit.co/jonathan.moya93@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="Last name" placeholder="Last name" required>
+                        <input type="text" name="subjet" placeholder="Subject" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="comments" id="" cols="30" rows="10" placeholder="message" required></textarea>
+                        <input id="button" type="submit" value="Submit">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#home" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <div class="networks">
+            <a href="https://www.facebook.com/jonathan.moya93" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/jonathan-emanuel-moya/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/JonathanEmanuelMoya" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <p>&copy; Personal-Portfolio 2022 | All rights reserved - Jonathan Emanuel Moya</p>
+    </footer>
+
+
+    <!-- <a href="img/Jonathan Emanuel Moya.pdf" download="Jonathan-moya-cv">Descargar CV</a>
+    <a href="img/Moya Jonathan Emanuel.pdf" download="Jonathan-moya-cv">Download CV</a> -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

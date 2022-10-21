@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.container-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #0bb9d8;
+    text-decoration: none;
+}
+
+.container-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a {
+    text-align: none;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.container-header header nav ul li a:hover {
+    color: #0bb9d8;
+}
+
+.nav-responsive {
+    background-color: #0bb9d8;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+        url(img/background-img.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.home .content-banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.home .content-banner img {
+    margin-top: 40px;
+    border: 10px solid #0bb9d8;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.home .content-banner h1 {
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Righteous';
+}
+
+.home .content-banner h2 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.home .content-banner .networks a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.home .content-banner .networks a:hover {
+    background-color: #0bb9d8;
+}
+
+.about {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.about .content-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about .content-section p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.about .content-section p span {
+    color: #0bb9d8;
+    font-weight: bold;
+}
+
+.about .row {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.about .row .col {
+    width: 50%;
+
+}
+
+.about .row .col h3 {
+    font-size: 25px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about .row .col .container-interests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about .row .col .container-interests .interests {
+    width: 150px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.about .row .col .container-interests .interests:hover {
+    background-color: #0bb9d8;
+}
+
+.about .row .col .container-interests .interests i {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.about button a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.about button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0bb9d8;
+    z-index: -1;
+    transition: 1s;
+}
+
+.about button:hover .overlay {
+    width: 100%;
+}
+
+.skills {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .content-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.skills .row {
+    display: flex;
+}
+
+.skills .row .col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .row .col h3 {
+    font-size: 25px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.skills .skill>span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .bar-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progress {
+    background-color: #0bb9d8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .bar-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #0bb9d8;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .html {
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.skills .skill .css {
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 82%;
+    }
+}
+
+.skills .skill .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.skills .skill .react {
+    width: 0%;
+    animation: 2s react forwards;
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .nodejs {
+    width: 0%;
+    animation: 2s nodejs forwards;
+}
+
+@keyframes nodejs {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+.skills .skill .comunication {
+    width: 0%;
+    animation: 2s comunication forwards;
+}
+
+@keyframes comunication {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .teamwork {
+    width: 0%;
+    animation: 2s teamwork forwards;
+}
+
+@keyframes teamwork {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.skills .skill .creativity {
+    width: 0%;
+    animation: 2s creativity forwards;
+}
+
+@keyframes creativity {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .dedication {
+    width: 0%;
+    animation: 2s dedication forwards;
+}
+
+@keyframes dedication {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.skills .skill .good-practices {
+    width: 0%;
+    animation: 2s good-practices forwards;
+}
+
+@keyframes good-practices {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+
+.proyects {
+    background-color: #252A2E;
+    color: #252A2E;
+    padding: 50px 20px;
+}
+
+.proyects .content-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.proyects h2 {
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.proyects .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyects .gallery .proyect {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+
+}
+
+.proyects .gallery .proyect img {
+    width: 340px;
+    height: 250px;
+    display: block;
+}
+
+.proyects .gallery .proyect .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(16, 150, 184, 0.9), rgba(16, 150, 184, .6));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.proyects .gallery .proyect .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.proyects .gallery .proyect .overlay h5,
+a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.proyects .gallery .proyect .overlay:hover {
+    opacity: 1;
+}
+
+.proyects .gallery .proyect .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+.contact {
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contact .content-section {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.contact .row {
+    display: flex;
+}
+
+.contact .col {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-left: 360px;
+}
+
+.contact .col input,
+.contact .col textarea {
+    display: block;
+    width: 50%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+#button{
+    background-color: #0bb9d8;
+    font-size: 20px;
+}
+
+
+
+/* form #button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0bb9d8;
+    z-index: -1;
+    transition: 1s;
+}
+
+form #button:hover .overlay {
+    width: 100%;
+} */
+
+
+footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+}
+
+footer .networks {
+    margin-bottom: 20px;
+}
+
+footer .networks a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer .networks a:hover {
+    background-color: #0bb9d8;
+}
+
+
+footer .up {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #0bb9d8;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+footer p{
+    font-family: 'Righteous';
+    font-size: 20px;
+}
+
