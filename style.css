@@ -556,7 +556,7 @@ a {
 
 .contact .col {
     width: 100%;
-    padding: 10px 30px;
+    padding: 10px 230px;
     text-align: center;
 }
 
@@ -653,6 +653,12 @@ footer p{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    .contact .row{
+        display: block;
+    }
+    .contact .row .col{
+        padding: 50px 150px;
+    }
 }
 @media screen and (max-width: 700px){
     .about .row{
@@ -685,5 +691,8 @@ footer p{
     }
     .contact .row{
         display: block;
+    }
+    .contact .row .col{
+        padding: 50px;
     }
 }
