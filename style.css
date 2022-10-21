@@ -579,24 +579,6 @@ a {
     font-size: 20px;
 }
 
-
-
-/* form #button .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #0bb9d8;
-    z-index: -1;
-    transition: 1s;
-}
-
-form #button:hover .overlay {
-    width: 100%;
-} */
-
-
 footer {
     background-color: #252A2E;
     color: #fff;
@@ -648,40 +630,4 @@ footer .up {
 footer p{
     font-family: 'Righteous';
     font-size: 20px;
-}
-
-@media screen and (max-width:980px){
-    nav{
-        display: none;
-    }
-    .nav-responsive{
-        display: block;
-    }
-    nav.responsive{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252A2E;
-        width: 180px;
-    }
-    nav.responsive ul{
-        display: block !important;
-    }
-    nav.responsive ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
-    }
-}
-
-@media screen and (max-width:700px) {
-.contact .row{
-        display: block;
-        justify-content: center;
-    }
-    .contact .row .col{
-        width: 100%;
-        margin-right: 50%;
-        justify-content: center;
-    }
 }
